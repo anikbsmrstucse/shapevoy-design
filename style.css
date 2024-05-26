@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --montserrat-font: "Montserrat", sans-serif;
+    --open-sans-font: "Open Sans", sans-serif;
+    --releway-font: "Raleway", sans-serif;
+    --primary-color: #fff;
+    ---secondary-color: #000;
+    --card-bg-color: #e6e6e6;
+}
+
+.wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* common class */
+.btn-common {
+    padding: 16px 28px;
+    font-family: var(--releway-font);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    text-decoration: underline;
+    line-height: 23px;
+}
+
+body {
+    background-color: var(---secondary-color) !important;
+}
+
+nav {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+header {
+    background-image: url("/assests/banner-img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.logo img {
+    width: 200px;
+}
+
+.nav-menu {
+    padding: 0;
+}
+
+.nav-menu ul {
+    display: flex;
+    border-radius: 12px;
+    backdrop-filter: blur(42px);
+    background: radial-gradient(
+        925% 272.47% at 2% 4%,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0) 100%
+    );
+    justify-content: space-between;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.nav-menu ul li:first-child {
+    padding-left: 100px;
+}
+.nav-menu ul li:last-child {
+    padding-right: 100px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--releway-font);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.banner-info {
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-info .button-grp {
+    margin-top: 40px;
+}
+
+.banner-info .title {
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.banner-info .sub-title {
+    margin-top: 40px;
+    font-family: var(--open-sans-font);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.order-btn {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.learn-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+}
+
+.order-btn i {
+    transform: rotate(-45deg);
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.workouts {
+    margin-top: 100px;
+    background-image: url("/assests/workouts-shape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--primary-color);
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+.workouts-info {
+    text-align: left;
+}
+
+.workouts-title {
+    font-family: var(--releway-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 27px;
+    margin: 0;
+    margin-bottom: 28px;
+}
+
+.workouts-subtitle {
+    font-family: var(--open-sans-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.single-workout {
+    background-color: var(--card-bg-color);
+    color: var(---secondary-color);
+    padding: 0 24px;
+}
+
+.single-img img {
+    width: 280px;
+    border-radius: 16px;
+    margin-top: -40px;
+}
+
+.single-workout .wr-card-title {
+    margin: 0;
+    font-family: var(--releway-font);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 90%;
+    text-align: left;
+    margin-top: 26px;
+}
+
+.single-workout .wr-card-subtitle {
+    margin: 0;
+    font-family: var(--open-sans-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.btn-outline-custom {
+    display: flex;
+    justify-content: end;
+}
+
+.btn-outline-custom button {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    background: transparent;
+}
+.btn-outline-custom i {
+    transform: rotate(-45deg);
+    font-size: 22px;
+}
+
+.workouts-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.workouts-btn button {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    padding-right: 0;
+    padding-left: 0;
+}
+/* media query for tablet laptop and mobile devices */
+@media (max-width: 1169px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 14px;
+    }
+    .workouts {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .workouts {
+        padding: 0 30px;
+    }
+}
